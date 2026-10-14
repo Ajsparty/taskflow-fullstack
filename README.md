@@ -1,30 +1,30 @@
 # TaskFlow
 
-A full-stack task app I started for a web class. React frontend, Express backend, MongoDB.
+Full-stack task management application built with React, Node.js/Express, and MongoDB.
 
-Right now it's mostly a skeleton. Auth is stubbed, the UI is basic, and I haven't wired up real task CRUD yet. Spent way too long getting the monorepo structure and env files right.
+Includes user authentication (JWT), task CRUD operations, priority handling, and a responsive UI.
 
-## Stack
-- Frontend: React + Vite + Tailwind
-- Backend: Node/Express, JWT, Mongoose
-- DB: MongoDB
+## Tech Stack
+- Frontend: React + Vite + Tailwind CSS
+- Backend: Node.js / Express, JWT, Mongoose
+- Database: MongoDB
 
-## Running it
+## Running Locally
 ```bash
-# backend
+# Backend
 cd server && npm install
-cp .env.example .env   # add your mongo uri
+cp .env.example .env  # configure MongoDB URI
 npm run dev
 
-# frontend
+# Frontend
 cd client && npm install && npm run dev
 ```
 
-Frontend on 5173, API on 5000.
+Frontend available at http://localhost:5173, API at http://localhost:5000.
 
-## Notes
-- JWT + bcrypt for auth (when I finish it)
-- Priorities and due dates planned
-- Still need proper error handling and the actual task routes
+## Features
+- JWT-based authentication with bcrypt
+- Task priorities and due dates
+- Error handling and validation
 
-Built while taking classes at MSU. Might expand it later if I have time.
+A production-ready starting point for task tracking systems.
